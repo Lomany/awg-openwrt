@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "SNAPSHOT"
+          - tag: "v23.05.4"
             pkgarch: aarch64_generic
             target: rockchip
             subtarget: armv8
