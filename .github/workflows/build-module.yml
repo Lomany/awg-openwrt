@@ -13,10 +13,10 @@ jobs:
       matrix:
         build_env:
           - tag: "23.05.4"
-            pkgarch: aarch64_generic
-            target: rockchip
-            subtarget: armv8
-            vermagic: "ec1573fc3905c16d59b8f3f89cbeae56-r1"
+            pkgarch: mipsel_24kc
+            target: ramips
+            subtarget: mt7621
+            vermagic: "144de9e5c1a8813b724b14faa054d9f0"
 
 
     steps:
