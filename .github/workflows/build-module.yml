@@ -18,12 +18,11 @@ jobs:
             subtarget: generic
             vermagic: "342af9e4f67b3447c53216ab8e3b12a1"
 
-
     steps:
       - uses: actions/checkout@v4
         with:
           repository: openwrt/openwrt
-          ref: ${{ matrix.build_env.tag }}
+          ref: v${{ matrix.build_env.tag }}
           fetch-depth: 0
 
       - name: Cache Tools and Kernel
@@ -115,4 +114,3 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: awgrelease/*.ipk
-
