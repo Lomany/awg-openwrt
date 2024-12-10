@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "v23.05.5"
-            pkgarch: aarch64_generic
-            target: ramips
+          - tag: "v19.07.3"
+            pkgarch: mips_24kc
+            target: ar71xx
             subtarget: mt76x8
-            vermagic: "81d2030506bf6ad3027d9c549b1e93da"
+            vermagic: "342af9e4f67b3447c53216ab8e3b12a1"
 
 
     steps:
